@@ -1,0 +1,22 @@
+.nav-enlace {
+	background-color: salmon;
+	color: ivory;
+	padding: 10px;
+	display: inline-block;
+}
+
+.nav-enlace:hover{
+	background-color: blue;
+	color: red;
+	padding: 30px;
+	color: ivory;
+}
+
+nav{
+	padding: 10px;
+	justify-content: space-around;
+	display: flex;
+}
+body {
+	background-color: black;
+}

@@ -1,5 +1,11 @@
 body {
-	background-color: antiquewhite;
+	background-color: #FFE59D;
+}
+
+titulo {
+		color: #7D1E6A;
+		font-family: 'Dosis', sans-serif;	
+		font-size: 24pt;
 }
 
 p {
@@ -8,12 +14,12 @@ p {
 }
 
 h1 {
-	color: blueviolet;
+	color: #7D1E6A;
 	font-family: 'Dosis', sans-serif;
 	;
 }
 
 ul {
-	color: black;
+	color: #7D1E6A;
 	font-family: 'Montserrat Alternates', sans-serif;
 }

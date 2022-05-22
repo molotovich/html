@@ -1,0 +1,33 @@
+body {
+	background-color:black
+}
+
+h1 {
+	color:indianred;
+	font-family:'Oswald', sans-serif;
+	font-size: 200%;
+	background-color: beige;
+	font-style: oblique;
+	padding: 20px;
+	margin-left: 100px;
+	margin-bottom: 50px;
+	margin-top: 200px;
+}
+
+.prueba {
+	color:blueviolet;
+	font-family:'Oswald', sans-serif;
+	font-size: 300%;
+	background-color: aliceblue;
+}
+
+p {
+	color:yellowgreen;
+	font-family:'Oswald', sans-serif;
+	font: size 200%;
+}
+
+ul{
+	color:antiquewhite;
+	font-family: 'Courier New', Courier, monospace;
+}
