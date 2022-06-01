@@ -25,18 +25,22 @@ ul {
 }
 
 nav {
-	background-color: blueviolet;
+	background-color: #7D1E6A;
 	font-family: 'Montserrat Alternates', sans-serif;
 	display: flex;
 	justify-content: space-around;
 }
 
 .nav-enlace {
-	color: aliceblue;
-	padding: 30px;
+	color: #BDE6F1;
+	padding: 30px 30px;
 
 }
 
 .nav-enlace:hover {
 	color: aqua;
+}
+
+.navegacion {
+	height: 100px;
 }
