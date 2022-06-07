@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=<device-width>" , initial-scale=1.0">
+	<link rel="stylesheet" href="navbar.css">
+	<title>Navbar</title>
+</head>
+
+<body>
+	<nav>
+		<div class="dropdown">
+			<button onclick="accion()" class="nav_boton">menu</button>
+			<div id="myDropdown" class="nav_enlace">
+				<a href="#">Inicio</a>
+				<a href="#">Nuestros Productos</a>
+				<a href="#">Nuestra misión</a>
+				<a href="#">Quienes Somos</a>
+				<a href="#">Contacto</a>
+			</div>
+		</div>
+	</nav>
+
+	<script>
+		function accion() {
+			var ancla = document.getElementsByClassName('nav_enlace');
+			for (var i = 0; i < ancla.length; i++) { ancla[i].classList.toggle('aparece'); }
+		}
+
+		window.onclick = function (event) {
+			if (!event.target.matches('.nav_boton')) {
+				var dropdowns = document.getElementsByClassName("nav_enlace");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('aparece')) {
+						openDropdown.classList.remove('aparece');
+					}
+				}
+			}
+		}
+	</script>
+
+
+</body>
+
+</html>
