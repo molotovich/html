@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis&family=Montserrat+Alternates&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Angela Accesorios y Regalos</title>
+</head>
+
+<body>
+	<nav>
+		<div class="dropdown">
+			<button onclick="accion()" class="nav_boton">menu</button>
+			<div id="myDropdown" class="nav_enlace">
+				<a href="index.html">Inicio</a>
+				<a href="productos.html">Nuestros Productos</a>
+				<a href="mision.html">Nuestra misión</a>
+				<a href="about.html">Quienes Somos</a>
+				<a href="contact.html">Contacto</a>
+			</div>
+		</div>
+	</nav>
+
+	<script>
+		function accion() {
+			var ancla = document.getElementsByClassName('nav_enlace');
+			for (var i = 0; i < ancla.length; i++) { ancla[i].classList.toggle('aparece'); }
+		}
+
+		window.onclick = function (event) {
+			if (!event.target.matches('.nav_boton')) {
+				var dropdowns = document.getElementsByClassName("nav_enlace");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('aparece')) {
+						openDropdown.classList.remove('aparece');
+					}
+				}
+			}
+		}
+	</script>
+
+	<titulo>Ángela Accesorios y Regalos</titulo>
+	<p>Tenemos accesorios para dama y detalles para esa persona especial</p>
+	<table border="1" aria-label="tabla de productos">
+		<tr>
+			<th>imagen</th>
+			<th>descripcion</th>
+			<th>costo</th>
+		</tr>
+		<tr>
+			<td><img src="images/Catalogo/Accesorio cabello 20.jpg" alt="accesorio de 20" width="200px"></td>
+			<td>
+				<p>Moño para cabello de poliester con broche metalico</p>
+			</td>
+			<td>
+				<P>$ 20.00</P>
+			</td>
+		</tr>
+		<tr>
+			<td><img src="images/Catalogo/Accesorio para cabello 20-1.jpg" alt="accesorio de 20" width="200px"></td>
+			<td>
+				<p>Banda para cabello de poliester con perlitas</p>
+			</td>
+			<td>
+				<P>$ 20.00</P>
+			</td>
+		</tr>
+		<tr>
+			<td><img src="images/Catalogo/bananas 10.jpg" alt="bananas de 10" width="200px"></td>
+			<td>
+				<p>Banana Plástica morada</p>
+			</td>
+			<td>
+				<P>$ 10.00</P>
+			</td>
+		</tr>
+	</table>
+
+</body>
+
+</html>
