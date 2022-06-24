@@ -1,5 +1,7 @@
 # html
 
-Aqui colocaré los elementos que se crearán para la materia de Tecnologías Web de la maestría :)
+Aqui estan los elementos que se crearán para la materia de Tecnologías Web de la maestría :)
 
-INcluye HTML básicos y Archivos CSS
+El proyecto se creó utilizando visual studio code, live server, y la carpeta html de nginx
+
+Incluye HTML básicos y Archivos CSS
